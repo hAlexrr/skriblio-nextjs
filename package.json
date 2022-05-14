@@ -1,0 +1,19 @@
+{
+  "name": "skriblio-react",
+  "version": "1.0.0",
+  "description": "Skribblio type game using react and express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Alex Rosales",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.0"
+  }
+}
