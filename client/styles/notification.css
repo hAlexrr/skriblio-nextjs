@@ -1,0 +1,53 @@
+.notification{
+    max-width: 400px;
+
+    /* position:fixed; */
+    right:0px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 0px;
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+
+    transition: all .8s;
+}
+
+.notiBox {
+    display:grid;
+    position:fixed;
+    right: 0;
+}
+
+.noti--pass {
+    color: black;
+    right: 0px;
+    font-size: 15px;
+    background-color: #ACD1AF;
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.noti--fail {
+    font-size: 15px;
+    color: black;
+    right: 0px;
+    background-color: #F47174 ;
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.noti--info {
+    font-size: 15px;
+    color: black;
+    right: 0px;
+    background-color: #EEEE9B;
+    opacity: 1;
+
+    visibility: visible;
+}

@@ -1,0 +1,90 @@
+html,
+body {
+  background: linear-gradient(-45deg, #051e3e,  #851e3e);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.HeaderTitle {
+  text-align: center;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.notification{
+  max-width: 400px;
+
+  /* position:fixed; */
+  right:0px;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 0px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+  transition: all .8s;
+}
+
+.notiBox {
+  display:grid;
+  position:fixed;
+  right: 0;
+  margin-top: 5rem;
+}
+
+.noti--pass {
+  color: black;
+  right: 0px;
+  font-size: 15px;
+  background-color: #ACD1AF;
+  opacity: 1;
+
+  visibility: visible;
+}
+
+.noti--fail {
+  font-size: 15px;
+  color: black;
+  right: 0px;
+  background-color: #F47174 ;
+  opacity: 1;
+
+  visibility: visible;
+}
+
+.noti--info {
+  font-size: 15px;
+  color: black;
+  right: 0px;
+  background-color: #EEEE9B;
+  opacity: 1;
+
+  visibility: visible;
+}
